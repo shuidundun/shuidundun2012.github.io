@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>爱发电风格主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的主页</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>这里是关于我的一些介绍。</p>
+    </section>
+    <section id="projects">
+        <h2>我的项目</h2>
+        <div class="project">
+            <h3>项目1</h3>
+            <p>项目描述...</p>
+        </div>
+        <div class="project">
+            <h3>项目2</h3>
+            <p>项目描述...</p>
+        </div>
+        <!-- 更多项目 -->
+    </section>
+    <section id="contact">
+        <h2>联系我</h2>
+        <form id="contactForm">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">邮箱:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">留言:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">提交</button>
+        </form>
+    </section>
+    <footer>
+        <p>版权所有 &copy; 2024</p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('感谢您的留言！');
+            // 这里可以添加代码来处理表单数据
+        });
+    </script>
+</body>
+</html>
